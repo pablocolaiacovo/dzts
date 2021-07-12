@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+
+    <style>
+      .slider {
+        display: flex;
+        align-items: center;
+      }
+
+      .slider.contain img {
+        max-height: 40vh;
+        object-fit: contain;
+      }
+
+      .slider.cover img {
+        max-height: 40vh;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DZTS</h1>
+      <hr />
+
+      <div class="slider contain">
+        <img src="/images/01.jpg" alt="" srcset="" />
+        <img src="/images/56515551a6aecb64d.jpeg" alt="" srcset="" />
+        <img src="/images/719a9c7edc113777e.jpeg" alt="" srcset="" />
+        <img src="/images/IMG_3626.jpg" alt="" srcset="" />
+      </div>
+
+      <div class="slider cover">
+        <img src="/images/01.jpg" alt="" srcset="" />
+        <img src="/images/56515551a6aecb64d.jpeg" alt="" srcset="" />
+        <img src="/images/719a9c7edc113777e.jpeg" alt="" srcset="" />
+        <img src="/images/IMG_3626.jpg" alt="" srcset="" />
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Latest Bootstrap compiled and minified JavaScript -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
+  </body>
+</html>
